@@ -1,0 +1,178 @@
+body {
+    background-color: black;
+    position: relative;
+}
+
+.shapes {
+    height: 100%;
+    width: 70%;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px black, 0 0 10px 4px white;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: visible;
+    transform: scale(0.6);
+    padding-bottom: 130px;
+    background-color: white;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 50px;
+}
+
+.semi-circle {
+    height: 80px;
+    width: 150px;
+    background-color: black;
+    margin-right: 50px;
+    border-radius: 100px 100px 0 0;
+    margin-top: 20px;
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    margin: 50px;
+    border-bottom: 150px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+}
+
+.trapezium {
+    height: 0;
+    width: 120px;
+    margin: 50px;
+    border-bottom: 150px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+}
+
+.parallelogram {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    transform: skewX(-20deg);
+    margin: 50px;
+}
+
+.hexagon {
+    width: 100px;
+    height: 0px;
+    border-bottom: 150px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    position: relative;
+    margin: 50px;
+}
+.hexagon::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100px;
+    border-top: 150px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    left: -100px;
+    bottom: -298px;
+}
+
+.leaf {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 0 250px 0 250px;
+    position: relative;
+    margin: 50px;
+}
+.leaf::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 5px solid transparent;
+    border-left: 5px solid black;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    border-bottom-left-radius: 50px;
+    bottom: -30px;
+    right: -50px;
+}
+.leaf::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-top-right-radius: 50px;
+    bottom: -86px;
+    right: -100px;
+}
+
+.drop {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+    margin: 50px;
+    margin-top: 200px;
+}
+
+.heart {
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background-color: black;
+    border-radius: 200px 200px 0 0;
+    margin: 150px;
+    transform: rotate(45deg);
+}
+.heart::before {
+    content: "";
+    position: absolute;
+    height: 160px;
+    width: 100px;
+    background-color: black;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(-90deg);
+    left: -30px;
+    top: 30px;
+}
+
+.star {
+    height: 0;
+    width: 0;
+    border-bottom: 160px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    position: relative;
+    margin-right: 50px;
+}
+.star::after {
+    content: "";
+    position: absolute;
+    left: -100;
+    top: 50px;
+    height: 0;
+    width: 0;
+    border-top: 150px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+}
+
+h2 {
+    position: absolute;
+    color: rgb(68, 68, 116);
+    bottom: 220px;
+    right: 550px;
+}
